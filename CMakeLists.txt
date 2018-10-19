@@ -1,5 +1,13 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.11)
-PROJECT(QtPropertyBrowser)
+PROJECT(qt_property_browser)
+
+find_package(catkin)
+
+catkin_package(
+INCLUDE_DIRS src
+LIBRARIES ${PROJECT_NAME}
+)
+
 
 ########################### Misc. Configs ##############################
 # Add custom cmake files folder
