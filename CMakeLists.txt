@@ -6,6 +6,7 @@ find_package(catkin)
 catkin_package(
 INCLUDE_DIRS src
 LIBRARIES ${PROJECT_NAME}
+CFG_EXTRAS qt_property_browser.cmake
 )
 
 
